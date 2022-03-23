@@ -20,8 +20,10 @@ new Vue({
             city: "",
             state: "",
             zip: "",
-            gift: "",
-            method: "",
+            gift: "선물로 보내기",
+            method: "자택",
+            sendGift: "선물로 보내기",
+            dontSendGift: "선물로 보내지 않기"
         }
     },
      filters:{
