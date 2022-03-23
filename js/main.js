@@ -9,7 +9,7 @@ new Vue({
              desciption: "당신의 고양이를 위한 <em>거부할 수 없는</em>, 유기농 25파운드 사료입니다.",
              price: 2000,
              image: "./images/product-fullsize.png",
-             availableInventory: 5
+             availableInventory: 10
             },
         cart: [],
         myProduct: true,
@@ -18,13 +18,21 @@ new Vue({
             lastName: "",
             address: "",
             city: "",
-            state: "",
+            states: { 
+                AL: '알리바마',
+                AK: '알래스카',
+                AR: '애리조나',
+                CA: '캘리포니아',
+                NV: '네바다'
+            },
             zip: "",
             gift: "선물로 보내기",
             method: "자택",
             sendGift: "선물로 보내기",
-            dontSendGift: "선물로 보내지 않기"
-        }
+            dontSendGift: "선물로 보내지 않기",
+            home: "부산광역시 수영구 남천동",
+            business: "동의대학교 정보관",           
+        }, 
     },
      filters:{
         comma(val){
@@ -96,6 +104,9 @@ new Vue({
          },
          submitForm: function() {
              alert("제출완료")
+         },
+         onlyNumber: function() {
+            this.value = this.value.replace(/[^0-9]/g,'');
          }
      },
 })
