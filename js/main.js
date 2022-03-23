@@ -12,6 +12,15 @@ new Vue({
              availableInventory: 5
             },
         cart: [],
+        myProduct: true,
+        order: {
+            firstName: "",
+            lastName: "",
+            address: "",
+            city: "",
+            state: "",
+            zip: "",
+        }
     },
      filters:{
         comma(val){
@@ -77,6 +86,9 @@ new Vue({
      methods: {
          addToCart: function() {
             this.cart.push(this.product.id)
+         },
+         showCheckout: function() {
+             this.myProduct = this.myProduct ? false : true;
          }
      },
 })
