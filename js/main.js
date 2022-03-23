@@ -91,6 +91,9 @@ new Vue({
          },
          showCheckout: function() {
              this.myProduct = this.myProduct ? false : true;
+         },
+         submitForm: function() {
+             alert("제출완료")
          }
      },
 })
