@@ -62,7 +62,6 @@ body {
   position: relative;
   width: 1.1em;
 }
-
 @media (min-width: 1200px) {
     .container{
         max-width: 970px;

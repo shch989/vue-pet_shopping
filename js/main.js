@@ -20,6 +20,8 @@ new Vue({
             city: "",
             state: "",
             zip: "",
+            gift: "",
+            method: "",
         }
     },
      filters:{
