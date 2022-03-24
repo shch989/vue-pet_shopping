@@ -19,9 +19,9 @@ let webstore = new Vue({
       city: '',
       zip: '',
       state: '',
-      method: '부산광역시 수영구 남천동',
+      method: '자택 주소',
       business: '동의대학교 정보관',
-      home: '자택 주소',
+      home: '부산광역시 수영구 남천동',
       gift:'선물로 보내기',
       sendGift: '선물로 보내기',
       dontSendGift: '선물로 보내기 않기'
